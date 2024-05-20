@@ -3,7 +3,7 @@ import {
   requireAuth,
   NotFoundError,
   NotAuthorizedError,
-} from '@rallycoding/common';
+} from '@cloudcorehub/common';
 import { Order } from '../models/order';
 
 const router = express.Router();

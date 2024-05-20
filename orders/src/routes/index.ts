@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { requireAuth } from '@rallycoding/common';
+import { requireAuth } from '@cloudcorehub/common';
 import { Order } from '../models/order';
 
 const router = express.Router();

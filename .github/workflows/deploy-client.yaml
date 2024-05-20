@@ -16,8 +16,8 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      - run: cd client && docker build -t rallycoding/ticketing-client .
-      - run: docker push rallycoding/ticketing-client
+      - run: cd client && docker build -t cloudcorehub/ticketing-client .
+      - run: docker push cloudcorehub/ticketing-client
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}

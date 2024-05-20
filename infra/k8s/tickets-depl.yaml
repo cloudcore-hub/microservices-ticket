@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tickets
-          image: rallycoding/tickets
+          image: cloudcorehub/tickets
           env:
             - name: NATS_CLIENT_ID
               valueFrom:

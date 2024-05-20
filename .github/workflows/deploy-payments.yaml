@@ -16,8 +16,8 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      - run: cd payments && docker build -t rallycoding/payments .
-      - run: docker push rallycoding/payments
+      - run: cd payments && docker build -t cloudcorehub/payments .
+      - run: docker push cloudcorehub/payments
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}

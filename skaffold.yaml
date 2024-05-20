@@ -9,7 +9,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: rallycoding/auth
+    - image: cloudcorehub/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -17,7 +17,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: rallycoding/ticketing-client
+    - image: cloudcorehub/ticketing-client
       context: client
       docker:
         dockerfile: Dockerfile
@@ -25,7 +25,7 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
-    - image: rallycoding/tickets
+    - image: cloudcorehub/tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
@@ -33,7 +33,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: rallycoding/orders
+    - image: cloudcorehub/orders
       context: orders
       docker:
         dockerfile: Dockerfile
@@ -41,7 +41,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: rallycoding/expiration
+    - image: cloudcorehub/expiration
       context: expiration
       docker:
         dockerfile: Dockerfile
@@ -49,7 +49,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: rallycoding/payments
+    - image: cloudcorehub/payments
       context: payments
       docker:
         dockerfile: Dockerfile
